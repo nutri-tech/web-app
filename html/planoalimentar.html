@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <!-- PAGE INFO -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nutri Tech | Plano Alimentar</title>
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="../css/planoalimentar.css" />
+
+    <!-- ICONS -->
+    <link rel="stylesheet" href="../assets/icons/style.css" />
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="header">
+      <a href="pacientes.html">
+        <img src="../assets/images/logo/nt-logo.svg" alt="Logo Nutri Tech" />
+      </a>
+      <div class="user">
+        <h5 class="name">Tatiane Oliveira</h5>
+        <img
+          src="../assets/images/people/tatiane.jpeg"
+          alt="Foto de perfil"
+          class="profile"
+        />
+        <a href="../index.html">
+          <i class="icon-logout"></i>
+          Sair
+        </a>
+      </div>
+    </header>
+    <main class="container">
+      <header>
+        <section class="section">
+          <div class="patient">
+            <img
+              src="../assets/images/people/luana.jpg"
+              alt="Foto perfil Luana"
+            />
+            <h3>Luana Rocha</h3>
+          </div>
+          <div class="patient-infos">
+            <h3>27 anos</h3>
+            <span>-</span>
+            <h3>1.83m</h3>
+            <span>-</span>
+            <h3>82.00kg</h3>
+            <span>-</span>
+            <h3>IMC: 19.57</h3>
+          </div>
+        </section>
+        <section class="menu-wrapper">
+          <nav class="menu">
+            <i class="icon-home"></i>
+            <h5>Início</h5>
+          </nav>
+        </section>
+      </header>
+      <main>
+        <section class="section">
+          <div class="option">
+            <div class="back">
+              <a href="pacientes.html">
+                <i class="icon-arrow_back"></i>
+              </a>
+              <h2>Adicionar Plano Alimentar</h2>
+            </div>
+            <button type="submit" class="button">Salvar</button>
+          </div>
+        </section>
+        <div class="divider"></div>
+        <section class="select">
+          <div class="description">
+            <h3>Dias da semana</h3>
+          </div>
+          <div class="week">
+            <div class="days">
+              <div class="day">
+                <input type="checkbox" id="monday" />
+                <label for="monday">Segunda-feira</label>
+              </div>
+              <div class="day">
+                <input type="checkbox" id="tuesday" />
+                <label for="tuesday">Terça-feira</label>
+              </div>
+              <div class="day">
+                <input type="checkbox" id="wednesday" />
+                <label for="wednesday">Quarta-feira</label>
+              </div>
+              <div class="day">
+                <input type="checkbox" id="thursday" />
+                <label for="thursday">Quinta-feira</label>
+              </div>
+              <div class="day">
+                <input type="checkbox" id="friday" />
+                <label for="friday">Sexta-feira</label>
+              </div>
+              <div class="day">
+                <input type="checkbox" id="saturday" />
+                <label for="saturday">Sábado</label>
+              </div>
+              <div class="day">
+                <input type="checkbox" id="sunday" />
+                <label for="sunday">Domingo</label>
+              </div>
+            </div>
+            <div class="legend">
+              <span>Plano alimentar atual</span>
+              <span>Sem plano alimentar</span>
+            </div>
+          </div>
+        </section>
+        <div class="divider"></div>
+        <section class="section">
+          <form action="planoalimentar.html">
+            <fieldset id="meta">
+              <label for="txt-descricao">Descrição</label>
+              <textarea
+                id="txt-descricao"
+                name="descricao"
+                rows="4"
+                placeholder="Motivos do paciente, observações gerais, objetivos..."
+              ></textarea>
+            </fieldset>
+            <fieldset id="meals">
+              <div class="head">
+                <h3>Refeições</h3>
+                <button class="button">Adicionar</button>
+              </div>
+              <div class="divider"></div>
+              <div class="body">
+                <div class="snack">
+                  <div class="delete">
+                    <i class="icon-delete"></i>
+                  </div>
+                  <div class="item">
+                    <label for="time">Horário</label>
+                    <input type="time" id="time" />
+                  </div>
+                  <div class="item">
+                    <label for="descricao">Descrição</label>
+                    <textarea
+                      id="descricao"
+                      name="descricao-snack"
+                      rows="1"
+                    ></textarea>
+                  </div>
+                  <div class="item food">
+                    <label for="itens">Itens</label>
+                    <textarea
+                      id="itens"
+                      name="itens"
+                      rows="6"
+                      placeholder="Itens da dieta"
+                    ></textarea>
+                    <h5>
+                      Cada item da dieta deve ficar em uma linha diferente
+                    </h5>
+                  </div>
+                </div>
+                <div class="divider"></div>
+                <div class="snack">
+                  <div class="delete">
+                    <i class="icon-delete"></i>
+                  </div>
+                  <div class="item">
+                    <label for="time">Horário</label>
+                    <input type="time" id="time" />
+                  </div>
+                  <div class="item">
+                    <label for="descricao">Descrição</label>
+                    <textarea
+                      id="descricao"
+                      name="descricao-snack"
+                      rows="1"
+                    ></textarea>
+                  </div>
+                  <div class="item food">
+                    <label for="itens">Itens</label>
+                    <textarea
+                      id="itens"
+                      name="itens"
+                      rows="6"
+                      placeholder="Itens da dieta"
+                    ></textarea>
+                    <h5>
+                      Cada item da dieta deve ficar em uma linha diferente
+                    </h5>
+                  </div>
+                </div>
+                <div class="divider"></div>
+                <div class="snack">
+                  <div class="delete">
+                    <i class="icon-delete"></i>
+                  </div>
+                  <div class="item">
+                    <label for="time">Horário</label>
+                    <input type="time" id="time" />
+                  </div>
+                  <div class="item">
+                    <label for="descricao">Descrição</label>
+                    <textarea
+                      id="descricao"
+                      name="descricao-snack"
+                      rows="1"
+                    ></textarea>
+                  </div>
+                  <div class="item food">
+                    <label for="itens">Itens</label>
+                    <textarea
+                      id="itens"
+                      name="itens"
+                      rows="6"
+                      placeholder="Itens da dieta"
+                    ></textarea>
+                    <h5>
+                      Cada item da dieta deve ficar em uma linha diferente
+                    </h5>
+                  </div>
+                </div>
+              </div>
+              <div class="divider"></div>
+              <div class="footer">
+                <button class="button">Adicionar refeição</button>
+              </div>
+            </fieldset>
+          </form>
+        </section>
+      </main>
+    </main>
+    <!-- PLANOALIMENTAR.JS -->
+    <script src="../js/planoalimentar.js"></script>
+  </body>
+</html>

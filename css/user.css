@@ -1,0 +1,134 @@
+/*====  RESET ============================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*====  VARIABLES ============================ */
+:root {
+  --header-height: 4.5rem;
+  /* colors */
+  --hue: 159;
+  /* HSL color mode */
+  --base-color: hsl(var(--hue) 36% 57%);
+  --base-color-second: hsl(var(--hue) 65% 88%);
+  --base-color-alt: hsl(var(--hue) 57% 53%);
+  --title-color: hsl(var(--hue) 41% 10%);
+  --text-color: hsl(0 0% 46%);
+  --text-color-light: hsl(0 0% 98%);
+  --body-color: hsl(0 0% 98%);
+  /* fonts */
+  --title-font-size: 1.875rem;
+  --subtitle-font-size: 1rem;
+  --title-font: 'Poppins', sans-serif;
+  --body-font: 'DM Sans', sans-serif;
+}
+
+/*===  BASE ============================ */
+body {
+  font: 400 1rem var(--body-font);
+  color: var(--text-color);
+  background: var(--base-color);
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  background: var(--body-color);
+}
+
+.title {
+  font: 700 var(--title-font-size) var(--title-font);
+  color: var(--title-color);
+  -webkit-font-smoothing: auto;
+  margin-bottom: 2rem;
+}
+
+.user {
+  background: var(--base-color);
+  margin-bottom: 2rem;
+  border-radius: 0.5rem;
+}
+
+.user:hover {
+  background: var(--base-color-alt);
+}
+
+.user h2 {
+  background: var(--base-color-second);
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+
+a {
+  color: var(--title-color);
+}
+
+.user i {
+  font-size: 4rem;
+}
+
+/*====  LAYOUT ============================ */
+.container {
+  width: 70%;
+  height: 70%;
+  margin: 4rem auto;
+}
+
+.wrapper {
+  padding: 1.5rem;
+}
+
+.title a i {
+  color: var(--title-color);
+  margin-right: 1rem;
+}
+
+.users {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user {
+  width: 60%;
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.user h2 {
+  margin-top: 2rem;
+}
+
+/*==== MEDIA QUERIES ============================ */
+/* extra large devices: 1200 > */
+@media (min-width: 1200px) {
+  .container {
+    width: 40%;
+    height: 75%;
+  }
+
+  .wrapper {
+    padding: 2rem 4rem;
+  }
+
+  .users {
+    flex-direction: row;
+    gap: 3rem;
+  }
+}
+
+/* mobile: < 400 */
+@media (max-width: 400px) {
+  .container {
+    width: 95%;
+    height: 95%;
+  }
+
+  .wrapper {
+    padding: 2rem 1rem;
+  }
+}
